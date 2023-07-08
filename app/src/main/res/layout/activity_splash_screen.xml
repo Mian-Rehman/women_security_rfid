@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Start.SplashScreen">
+
+    <ImageView
+        android:id="@+id/sp_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:src="@drawable/blue_logo" />
+
+    <TextView
+        android:id="@+id/sp_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_image"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="Smart and secure gate pass"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

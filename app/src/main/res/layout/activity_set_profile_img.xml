@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Driver.SetPRofileImgActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blue"
+        android:elevation="10dp"
+        android:gravity="center|left">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/back_image"
+            android:text="Choose your profile picture"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <!--    <com.theartofdev.edmodo.cropper.CropImageView-->
+    <!--        xmlns:custom="http://schemas.android.com/apk/res-auto"-->
+    <!--        android:id="@+id/cropImageView"-->
+    <!--        android:id="@+id/profilePic_Image"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:src="@drawable/ic_user"-->
+    <!--        android:layout_weight="1"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePic_Image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_user"
+        android:tint="@color/dark_blue"
+        app:civ_border_color="@color/dark_blue"
+        app:civ_border_width="5dp"
+        tools:ignore="RedundantNamespace" />
+
+    <ImageView
+        android:id="@+id/personalDetails_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/profilePic_Image"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="-35dp"
+        android:layout_toRightOf="@+id/profilePic_Image"
+        android:src="@drawable/pencil"
+        app:tint="@color/dark_blue" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePic_Image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/dark_blue"
+        android:text="update"
+        android:padding="15dp"
+        android:textColor="@color/white" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:background="@color/background_primary"
+        >
+
+        <TextView
+            android:id="@+id/text_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guildlines for a good profile picture:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:tint="@color/dark_blue"
+            android:layout_below="@+id/text_bottom"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/check" />
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Shades/sunglasses"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_1"
+            android:layout_below="@+id/text_bottom"
+            />
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/check"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_1"
+            app:tint="@color/dark_blue" />
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img_2"
+            android:text="No group photos"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/check"
+            android:layout_marginTop="10dp"
+            app:tint="@color/dark_blue"
+            android:layout_below="@+id/img_2"/>
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Face the camera"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_3"
+            android:layout_below="@+id/img_2"
+            />
+
+        <ImageView
+            android:id="@+id/img_4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/check"
+            app:tint="@color/dark_blue"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_3"/>
+
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Neither to dark nor to bright"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_4"
+            android:layout_below="@+id/img_3"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

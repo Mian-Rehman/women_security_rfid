@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/background_primary"
+    tools:context=".Parent.ParentAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/personl_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Add Child Details"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/dataField_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/personl_text"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/back_image"
+                android:text="Parent Name"
+                android:layout_marginTop="20dp"
+                android:textSize="13sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:inputType="textPersonName"
+                android:background="@drawable/border_layout"
+                android:hint="Full Name"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Children Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_childName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:inputType="text"
+                android:background="@drawable/border_layout"
+                android:hint="Enter Children Name"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_className"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@drawable/border_layout"
+                android:hint="Enter Class"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll No"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_rollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@drawable/border_layout"
+                android:hint="Enter Roll No"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Institute Name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_instituteName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@drawable/border_layout"
+                android:hint="Enter Institute Name"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Institute Address"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_instituteAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="13sp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:background="@drawable/border_layout"
+                android:hint="Enter Institute Address"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_phoneDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:inputType="number"
+                android:background="@drawable/border_layout"
+                android:hint="Enter Phone Number"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Address"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/ed_address"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:inputType="textPostalAddress"
+                android:background="@drawable/border_layout"
+                android:hint="Enter Home Address"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="save"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/dark_blue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cornerRadius="10dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/dataField_layout"
+            android:background="@drawable/button_background"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            />
+    </RelativeLayout>
+
+</ScrollView>

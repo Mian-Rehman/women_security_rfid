@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    tools:context=".Driver.StudentDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blue"
+        android:elevation="10dp"
+        android:gravity="center|left">
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/back_image"
+            android:text="Student Details"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_below="@+id/topLayout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:id="@+id/dataField_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/back_image"
+                    android:text="Full Name"
+                    android:layout_marginTop="20dp"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/ed_fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/border_layout"
+                    android:hint="Full Name"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Children Name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/ed_childName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:inputType="text"
+                    android:background="@drawable/border_layout"
+                    android:hint="Enter Children Name"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/ed_className"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:background="@drawable/border_layout"
+                    android:hint="Enter Class"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Institute Name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/ed_instituteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:background="@drawable/border_layout"
+                    android:hint="Enter Institute Name"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Institute Address"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/ed_instituteAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textSize="13sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:background="@drawable/border_layout"
+                    android:hint="Enter Institute Address"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    >
+                    <TextView
+                        android:id="@+id/ed_phoneDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_layout"
+                        android:hint="Enter Phone Number"
+                        />
+
+                    <ImageView
+                        android:id="@+id/phone_image"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/phone"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                         />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Address"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/ed_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:inputType="textPostalAddress"
+                    android:background="@drawable/border_layout"
+                    android:hint="Enter Home Address"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

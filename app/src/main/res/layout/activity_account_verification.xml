@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background_primary"
+    tools:context=".AccountVerificationActivity">
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_arrow"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Verification"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete your details and become a partner of MT Click and grow up your busniess"
+        android:textSize="13sp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/gray"
+        android:layout_marginRight="50dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profilePic_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@+id/profile_text"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/profilePic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Your Profile"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/below_profilePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilePic_text"
+                android:textColor="@color/gray"
+                android:text="set your profile to confirm your identity"
+                android:textSize="12sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profilePic_Image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_user"
+                app:civ_border_color="@color/dark_blue"
+                app:civ_border_width="5dp"
+                tools:ignore="RedundantNamespace" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/personalDetails_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@+id/profile_text"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/personalDetails_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/below_personalDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personalDetails_text"
+                android:text="Email, Contact ,other"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/personalDetails_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/circle"
+                android:layout_alignParentRight="true"
+                app:tint="@color/dark_blue"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shopDetails_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:cardCornerRadius="8dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/shopDetails_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Details"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/below_shopDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Number,Address"
+                android:layout_below="@+id/shopDetails_text"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/shopDetails_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/circle"
+                android:layout_alignParentRight="true"
+                app:tint="@color/dark_blue"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shopImages_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        app:cardCornerRadius="8dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/shopImages_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Identity proof"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/below_shopImages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add your awards and certificate here"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:layout_below="@+id/shopImages_text"
+
+                />
+
+            <ImageView
+                android:id="@+id/shopImages_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/circle"
+                android:layout_alignParentRight="true"
+                app:tint="@color/dark_blue" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/submitInformation_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Information"
+        android:backgroundTint="@color/dark_blue"
+        app:cornerRadius="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+
+
+</LinearLayout>

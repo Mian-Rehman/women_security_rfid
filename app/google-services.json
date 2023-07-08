@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "868607039644",
+    "project_id": "child-exit-security-system",
+    "storage_bucket": "child-exit-security-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868607039644:android:da241d6a463a11bea23559",
+        "android_client_info": {
+          "package_name": "com.rehman.womansecuritysystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868607039644-22v30kd8lft2l8bgkjd3sm9dtp8sd2a7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs70NdQnfH6VqHeDdZCWEnXewtKadzwlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868607039644-22v30kd8lft2l8bgkjd3sm9dtp8sd2a7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    tools:context=".Parent.DriverDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blue"
+        android:gravity="center|left"
+        android:elevation="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/back_image"
+            android:text="Driver Details"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/topLayout"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+
+           >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Driver Personal Details"
+               android:textColor="@color/white"
+               android:background="@color/dark_blue"
+               android:padding="10dp"
+               android:textStyle="bold"
+               />
+
+           <LinearLayout
+               android:id="@+id/dataField_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="10dp"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/back_image"
+                   android:text="Full Name"
+                   android:layout_marginTop="20dp"
+                   android:textSize="13sp"
+                   android:layout_marginLeft="10dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/fullNameDetail_ed"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:textSize="13sp"
+                   android:inputType="textPersonName"
+                   android:background="@drawable/border_layout"
+                   android:hint="Full Name"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Father Name"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="13sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/fatherName_ed"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:textSize="13sp"
+                   android:inputType="text"
+                   android:background="@drawable/border_layout"
+                   android:hint="Enter Father Name"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Email"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="13sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/emailDetail_ed"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:textSize="13sp"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:inputType="textEmailAddress"
+                   android:background="@drawable/border_layout"
+                   android:hint="Enter Email"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Phone Number"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="13sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/phoneDetail_ed"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:textSize="13sp"
+                   android:inputType="number"
+                   android:background="@drawable/border_layout"
+                   android:hint="Enter Phone Number"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Home Address"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="13sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/address_ed"
+                   android:layout_width="match_parent"
+                   android:layout_height="70dp"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:layout_gravity="top"
+                   android:gravity="top"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:textSize="13sp"
+                   android:inputType="textPostalAddress"
+                   android:background="@drawable/border_layout"
+                   android:hint="Enter Home Address"
+                   />
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Driver Vehicle Details"
+               android:textColor="@color/white"
+               android:background="@color/dark_blue"
+               android:padding="10dp"
+               android:textStyle="bold"
+               />
+
+           <LinearLayout
+               android:id="@+id/vehicleDetails_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="10dp"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/back_image"
+                   android:text="Vehicle Owner Name"
+                   android:layout_marginTop="20dp"
+                   android:textSize="13sp"
+                   android:padding="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/ed_vehicleOwnerName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:textSize="13sp"
+                   android:inputType="textPersonName"
+                   android:background="@drawable/border_layout"
+                   android:hint="Full Name"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Vehicle Number"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="13sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/ed_vehicleNumber"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:textSize="13sp"
+                   android:inputType="text"
+                   android:background="@drawable/border_layout"
+                   android:hint="Vehicle Number"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Driver Name"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="13sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/ed_driverName"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:textSize="13sp"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:inputType="text"
+                   android:background="@drawable/border_layout"
+                   android:hint="Driver Name"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Vehicle Type"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="13sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/tv_vehicleType"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:textSize="13sp"
+                   android:inputType="number"
+                   android:background="@drawable/border_layout"
+                   android:hint="Phone Number"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Vehicle Details..."
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="13sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/dark_blue"
+                   />
+
+               <TextView
+                   android:id="@+id/ed_vehicleDetails"
+                   android:layout_width="match_parent"
+                   android:layout_height="70dp"
+                   android:layout_marginTop="10dp"
+                   android:padding="10dp"
+                   android:layout_gravity="top"
+                   android:gravity="top"
+                   android:textColorHint="@color/gray"
+                   android:textColor="@color/black"
+                   android:textSize="13sp"
+                   android:inputType="textPostalAddress"
+                   android:background="@drawable/border_layout"
+                   android:hint="Details...."
+                   />
+
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>

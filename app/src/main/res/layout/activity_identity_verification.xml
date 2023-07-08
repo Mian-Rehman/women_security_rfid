@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileProgress.IdentityVerificationActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/dark_blue"
+        android:gravity="center|left"
+        >
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/upload_text"
+            android:layout_toRightOf="@+id/back_image"
+            android:text="Identity Verification"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/upload_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/photoCount_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload your ID Card"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:layout_below="@+id/topLayout"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/photoCount_text"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/text_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FBE3D2"
+        android:padding="5dp"
+        android:text="Upload your ID Details. If you upload false details your account didn't approved"
+        android:textColor="@color/dark_blue"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:layout_below="@+id/text_heading"
+        >
+
+        <Button
+            android:id="@+id/btn_front"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:text="FRONT SIDE"
+            android:layout_margin="8dp"
+            />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:text="BACK SIDE"
+            android:layout_margin="8dp"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/views"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@+id/button_layout"
+        android:background="@color/gray"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/views"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/idFront_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/id_card"
+                android:layout_margin="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/idBack_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/id_card"
+                android:layout_margin="8dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

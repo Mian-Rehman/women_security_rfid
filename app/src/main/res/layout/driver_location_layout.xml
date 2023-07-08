@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    android:id="@+id/card"
+    android:backgroundTint="@color/white"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_parentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:padding="5dp"
+            android:text="Parent Name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_childName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Child Name"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver username"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/tv_lastLocation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/direction"
+            android:layout_gravity="end"
+            app:tint="@color/dark_blue" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
