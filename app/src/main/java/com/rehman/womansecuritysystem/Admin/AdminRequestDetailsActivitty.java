@@ -258,6 +258,8 @@ public class AdminRequestDetailsActivitty extends AppCompatActivity {
 
 //                    Toast.makeText(AdminRequestDetailsActivitty.this, frontSide, Toast.LENGTH_SHORT).show();
 
+                    idFront_image.setVisibility(View.VISIBLE);
+                    idBack_image.setVisibility(View.VISIBLE);
                     Glide.with(AdminRequestDetailsActivitty.this).load(frontSide).into(idFront_image);
                     Glide.with(AdminRequestDetailsActivitty.this).load(backSide).into(idBack_image);
                 }

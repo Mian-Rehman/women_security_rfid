@@ -13,7 +13,6 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.firebase.ui.auth.data.model.User;
 import com.rehman.womansecuritysystem.Admin.AdminRequestDetailsActivitty;
 import com.rehman.womansecuritysystem.Model.UserModel;
 import com.rehman.womansecuritysystem.R;

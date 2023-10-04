@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "868607039644",
-    "project_id": "child-exit-security-system",
-    "storage_bucket": "child-exit-security-system.appspot.com"
+    "project_number": "529301459679",
+    "project_id": "women-bda91",
+    "storage_bucket": "women-bda91.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:868607039644:android:da241d6a463a11bea23559",
+        "mobilesdk_app_id": "1:529301459679:android:b4f3abe24a99b494a08f6a",
         "android_client_info": {
           "package_name": "com.rehman.womansecuritysystem"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "868607039644-22v30kd8lft2l8bgkjd3sm9dtp8sd2a7.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCs70NdQnfH6VqHeDdZCWEnXewtKadzwlk"
+          "current_key": "AIzaSyDcO3hRrYLI_wloAGS3KGn5WYHB6dGinIk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "868607039644-22v30kd8lft2l8bgkjd3sm9dtp8sd2a7.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
